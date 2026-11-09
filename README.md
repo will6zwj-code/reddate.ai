@@ -26,7 +26,7 @@ git push origin main
 
 `stage-static.mjs` copies the built site into the Pages root and removes only obsolete files listed in the previous generated-file manifest. It does not change the editable source, repository history or domain configuration.
 
-Official App download links can be added in `website-source/lib/site-config.ts`, then built and published with the same steps. Current App data is illustrative; research content describes a proposed validation approach, and the privacy policy remains a clearly marked review draft.
+Official App download links can be added in `website-source/lib/site-config.ts`, then built and published with the same steps. Current App data is illustrative; research content describes a proposed validation approach. The Privacy Policy covers the public website and related enquiries and is maintained in website-source/lib/privacy.ts, including the responsible company and privacy contact.
 
 ## Hosting
 

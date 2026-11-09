@@ -24,4 +24,13 @@ assert.ok(fs.existsSync(path.join(output, '404.html')), 'Missing GitHub Pages 40
 assert.ok(fs.existsSync(path.join(output, '.nojekyll')), 'Missing .nojekyll');
 assert.equal(fs.readFileSync(path.join(output, 'CNAME'), 'utf8').trim(), 'reddate.ai');
 assert.ok(!fs.existsSync(path.join(output, '.openai')), 'Unexpected previous host identity');
+for (const route of ['privacy', 'privacy-policy']) {
+  const html = fs.readFileSync(path.join(output, route, 'index.html'), 'utf8');
+  assert.ok(html.includes('mailto:hello@reddate.com.au'), `Missing live privacy contact: /${route}`);
+  assert.ok(html.includes('Reddate Intelligence Pty Ltd'), `Missing responsible company: /${route}`);
+  assert.ok(html.includes('We never sell your personal information.'), `Missing no-sale commitment: /${route}`);
+  assert.ok(!/review draft|审阅草稿|審閱草稿|待核实|待核實/i.test(html), `Internal draft copy leaked into /${route}`);
+}
+const policy = fs.readFileSync(path.join(output, 'privacy-policy/index.html'), 'utf8');
+assert.equal((policy.match(/<article\b/g) || []).length, 13, 'Incomplete privacy policy sections');
 console.log(`Static export verified: ${routes.length} page routes, ${referencedAssets.size} referenced assets, 404, CNAME and .nojekyll.`);

@@ -37,7 +37,7 @@ Open `http://localhost:8080/`. This simple preview server does not automatically
 - `public/images/`: website visual assets and original App prototype screenshots.
 - `lib/site-config.ts`: future verified App Store/Google Play URLs, optional browser demo and support email.
 
-Official App release links are intentionally unset. Prototype screens, scores and insights remain illustrative. Research content describes the proposed analysis/validation approach. Privacy policy content remains an explicitly labelled review draft.
+Official App release links are intentionally unset. Prototype screens, scores and insights remain illustrative. Research content describes the proposed analysis/validation approach. The Privacy Policy covers the public website and related enquiries, with Reddate Intelligence Pty Ltd as the responsible company and hello@reddate.com.au as the privacy contact.
 
 ## Language behavior
 

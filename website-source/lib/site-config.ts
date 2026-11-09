@@ -8,7 +8,7 @@ export const siteConfig = {
   },
   // An HTTPS browser demo; native App packages cannot run inside a browser iframe.
   demoEmbedUrl: null as string | null,
-  supportEmail: null as string | null,
+  supportEmail: 'hello@reddate.com.au' as string | null,
 };
 
 export function releaseUrl(value: string | null): string | null {

@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 const root=process.cwd();
 const keys=new Set();
 const isText=n=>ts.isStringLiteral(n)||ts.isNoSubstitutionTemplateLiteral(n);
-for(const file of ['lib/content.ts','components/site.tsx']) {
+for(const file of ['lib/content.ts','components/site.tsx','lib/privacy.ts']) {
  const sf=ts.createSourceFile(file,fs.readFileSync(file,'utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
  function visit(n) {
   if(ts.isArrayLiteralExpression(n)) {
