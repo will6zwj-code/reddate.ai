@@ -30,5 +30,5 @@ export const labels: Record<string,string> = {
  'Different work hours, study, rest and family routines can share the same home. Start with preferences people choose, rather than assumptions about how a household lives.':'工作、学习、休息和家庭作息可以在同一个家中并存。从家人主动选择的偏好出发，而不是预设家庭应该怎样生活。',
  'Energy choices that fit your plan':'符合实际电价方案的选择',
  'Compare everyday use with the household’s actual tariff and comfort needs. Peak periods, metering and available options depend on the provider and plan.':'结合家庭实际电价与舒适需要比较日常使用。高峰时段、计量与可选方案取决于服务商和所选计划。',
- 'Illustrative Australian scenarios · availability depends on the released App and supported devices.':'澳大利亚生活场景示意 · 实际能力取决于发布 App 与受支持设备。',
+ "Our product vision, shaped around everyday life in Australia.":"围绕澳大利亚家庭日常，构建我们的产品愿景。",
 };
